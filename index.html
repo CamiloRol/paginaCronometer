@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CronometerSog</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./recursos/logo cronómetro.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+</head>
+<body>
+    <!-- Aca quieres cambiar el color y colocar transparencia hazlo directamente en la etiqueta como lo tengo-->
+    <nav  id="navSpace" style="background-color: gray;">
+        <img src="./recursos/logo cronómetro.png" alt="">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Funcionalidades</a>
+            </li>
+    </nav>
+
+    <section id="mainContainer">
+        <!-- Lo que isra quiera colocar -->
+
+        <section id="formSpace">
+            <h1>Bienvenido a tu cronometro favorito🎉</h1>
+            <form action="" id="setCronometers">
+                <label for="">Cuantos cronometros necesita?: </label>
+                <input type="number" id="getCronoValue">
+
+                <button id="procInit" class="btnStyling">Continuar</button>
+            </form>
+            <form action="" id="settersTime" style="display: none;">
+                <div>
+                    <!-- Esto se debe insertar dinamicamente -->
+                    <label for="">Ingrese Tiempo en minutos: </label>
+                    <input type="number" id="setTime">
+                </div>
+                <button id="procCreated" class="btnStyling">Crear</button>
+            </form>
+        </section>
+    </section>
+
+    <section id="cronometerSpace">
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
