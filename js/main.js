@@ -4,6 +4,7 @@ const setCronometers = document.getElementById('setCronometers')
 const procInit = document.getElementById('procInit')
 const settersTime = document.getElementById('settersTime')
 const procCreated = document.getElementById('procCreated')
+const reloadPage = document.getelementById('reloadPage')
 
 //Obtencion de valores
 const getCronoValue = document.getElementById('getCronoValue').value
@@ -18,5 +19,8 @@ function iniciar() {
         setCronometers.style.display = "none"
         settersTime.style.display = "flex"
     })
-}
 
+reloadPage.addEventListener('click', function () {
+    location.reload()
+    })
+}
