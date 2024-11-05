@@ -22,8 +22,23 @@
 
 /* Codigo del isra */
 
+.carrousel-container{
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(60deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    align-items: center;
+    
+
+}
+
+.carrouselcontainer-right video{
+    width: 90%;
+    
+}
 
 
+/* Aqui termina el codigo del isra  */
 
 #formSpace {
     width: 100%;
