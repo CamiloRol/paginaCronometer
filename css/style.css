@@ -36,7 +36,7 @@
 .carrousel-container{
 
     /* display:grid;
-    grid-template-columns: 1fr 1fr; Israel esta vaina quiere decir los fragmentos de la columna pero hjp*/
+    grid-template-columns: 1fr 1fr 1fr; Israel esta vaina quiere decir los fragmentos de la columna pero hjp*/
     align-items: center;
     width: 80%;
     margin-left: 10%;
