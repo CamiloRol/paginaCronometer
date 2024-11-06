@@ -25,7 +25,7 @@
 /* Codigo del isra */
 
 #navSpace a:hover {
-    color: #07148a; 
+    color:  #1418da; 
 }
 
 
@@ -37,6 +37,8 @@
 
     /* display:grid;
     grid-template-columns: 1fr 1fr 1fr; Israel esta vaina quiere decir los fragmentos de la columna pero hjp*/
+    display: flex;
+    gap: 140px;
     align-items: center;
     width: 80%;
     margin-left: 10%;
@@ -46,6 +48,10 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     /* Toda esta vaina es para poner un fucking container transpente maracaibo */
+}
+.carrousel-container img{
+    width: 20%;
+
 }
 
 /* .carrouselcontainer-right video{
