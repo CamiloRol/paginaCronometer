@@ -20,30 +20,52 @@
     font-weight: bolder;
 }
 
+
+
 /* Codigo del isra */
 
+#navSpace a:hover {
+    color: #07148a; 
+}
+
+
+.mainContainer{
+    display: flex;
+
+}
 .carrousel-container{
 
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    background: linear-gradient(60deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    /* display:grid;
+    grid-template-columns: 1fr 1fr; Israel esta vaina quiere decir los fragmentos de la columna pero hjp*/
     align-items: center;
-    
-
+    width: 80%;
+    margin-left: 10%;
+    background: rgba(2, 0, 8, 0.685);
+    padding: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    /* Toda esta vaina es para poner un fucking container transpente maracaibo */
 }
 
-.carrouselcontainer-right video{
+/* .carrouselcontainer-right video{
     width: 90%;
-    
-}
+}  Please no borrar */
 
+body{
+    background: url(../recursos/IMAGEN1PARABACKGROUND.jpeg) no-repeat fixed ;
+    background-position: center;
+    background-size: cover;
+    /* Acordarse de esta propiedades para cuadrar el background */
+}
 
 /* Aqui termina el codigo del isra  */
 
 #formSpace {
-    width: 100%;
+     width: 99%;/*modifique esto a 99 para que no tomara toda la pantalla  */
     height: 60vh;
-    background: linear-gradient(60deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+     margin-left: 0.5%; /*Isra haciendo de las suyas y agregando esto pues para que se vea mejor el coso*/
+    background: linear-gradient(60deg, rgba(188, 187, 245, 0.486) 0%, rgb(45, 246, 253) 100%);
     display: flex;
     justify-content: center;
     margin-top: 2%;
@@ -82,4 +104,46 @@
     height: 32px;
     background-color: black;
     color: white;
+}
+
+
+
+/* Estilos generales del footer (Opcional) puestos por isra */
+.footer {
+    background-color: #000407; 
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #1418da; 
+}
+
+
+.footer-copyright {
+    margin-top: 15px;
+    font-size: 0.9rem;
 }
