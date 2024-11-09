@@ -5,6 +5,7 @@ const procInit = document.getElementById('procInit')
 const settersTime = document.getElementById('settersTime')
 const procCreated = document.getElementById('procCreated')
 let setTime
+const reloadPage = document.getelementById('reloadPage')
 
 //Obtencion de valores
 const getCronoValue = document.getElementById('getCronoValue').value
@@ -36,5 +37,8 @@ function createdInit() {
                 <button id="procCreated" class="btnStyling">Crear</button>`
         setTime = document.getElementById(`setTime${i}`).value
     }
-}
 
+reloadPage.addEventListener('click', function () {
+    location.reload()
+    })
+}

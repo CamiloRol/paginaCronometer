@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Aca quieres cambiar el color y colocar transparencia hazlo directamente en la etiqueta como lo tengo-->
-    <nav  id="navSpace" style="background-color: gray;">
+    <nav  id="navSpace" style="background-color: #000407ea;">
         <img src="./recursos/logo cronómetro.png" alt="">
         <ul class="nav justify-content-end">
             <li class="nav-item">
@@ -24,9 +24,14 @@
 
     <section id="mainContainer">
         <!-- Lo que isra quiera colocar -->
-        <!-- <div class="carrousel-container">
-            <div class="carrouselcontainer-left">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carrousel-container">
+          <!-- Tranquilos esto de aca abajo es una prueba y porfa no vayan a borrar todavia el carrousel -->
+          <img src="./recursos/icons8-cronometro-100.png" alt="">
+          <img src="./recursos/icons8-ejercicio-100.png" alt="">
+          <img src="./recursos/icons8-seguro-100.png" alt="">
+
+            <!-- <div class="carrouselcontainer-left">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="width: 90%; margin-left: 20px;">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./recursos/sesion.gif" class="d-block w-80" alt="..." >
@@ -41,9 +46,11 @@
           </div>
         </div>
         <div class="carrouselcontainer-right">
-            <video src="./recursos/mujerboxeando.mp4" loop autoplay ></video>
-        </div>
+            <video src="./recursos/mujerboxeando.mp4" loop autoplay muted></video>
         </div> -->
+
+
+        </div>
 
         <section id="formSpace">
             <h1>Bienvenido a tu cronometro favorito🎉</h1>
@@ -56,6 +63,7 @@
             <form action="" id="settersTime">
                 
             </form>
+            <button id="reloadPage">Recargar</button>
         </section>
     </section>
 
@@ -63,9 +71,32 @@
 
     </section>
 
-    <footer>
+    
 
-    </footer>
+      
+
+<!-- Footer opcional puesto por isra -->         
+      <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h3>CronometerSog</h3>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#">Sobre Nosotros</a>
+                <a href="#">Contacto</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Política de Privacidad</a>
+            </div>
+            
+            
+            <div class="footer-copyright">
+                <p>&copy; 2024 CronometerSog. Todos los derechos reservados.</p>
+            </div>
+        </div>
+      </footer>
+
+   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script type="module" src="./js/main.js"></script>
