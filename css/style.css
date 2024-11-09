@@ -32,8 +32,13 @@
 
 .mainContainer{
     display: flex;
-
 }
+
+.carrousel-container img:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
 .carrousel-container{
 
     /* display:grid;
