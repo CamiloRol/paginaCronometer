@@ -14,6 +14,7 @@ window.addEventListener('load', iniciar)
 
 /* let crono1 = new Cronometro(getCronoValue, setTime) */
 
+/* lo que hacemos con window load es tener una funcion que nos precargue botones o funcionalidades iniciales para la pagina */
 function iniciar() {
     settersTime.style.display = "none"    
     procInit.addEventListener('click', function (event) {
@@ -27,6 +28,7 @@ function iniciar() {
     }) */
 }
 
+/* Esta es la funcion que solicita los tiempos que va a tener los cronos */
 function createdInit() {
     for (let i = 1; i < getCronoValue; i++) {
         settersTime.innerHTML += `

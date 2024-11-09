@@ -20,14 +20,15 @@
     font-weight: bolder;
 }
 
-
-
-/* Codigo del isra */
+/* Codigo elaborado por Israel*/
 
 #navSpace a:hover {
-    color:  #1418da; 
+    color:  #6d6fcf; 
 }
 
+.btnStyling:hover {
+    background: linear-gradient(145deg, #939393, #ffffff);
+}
 
 .mainContainer{
     display: flex;
@@ -65,12 +66,12 @@ body{
     /* Acordarse de esta propiedades para cuadrar el background */
 }
 
-/* Aqui termina el codigo del isra  */
+/* Aqui termina el codigo elaborado por israel */
 
 #formSpace {
      width: 99%;/*modifique esto a 99 para que no tomara toda la pantalla  */
     height: 60vh;
-     margin-left: 0.5%; /*Isra haciendo de las suyas y agregando esto pues para que se vea mejor el coso*/
+     margin-left: 0.5%; /*estilizacion*/
     background: linear-gradient(60deg, rgba(188, 187, 245, 0.486) 0%, rgb(45, 246, 253) 100%);
     display: flex;
     justify-content: center;
@@ -105,16 +106,18 @@ body{
 
 .btnStyling {
     border: none;
-    margin-top: 4%;
-    width: 180px;
-    height: 32px;
-    background-color: black;
-    color: white;
+    width: 128px;
+    height: 35px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #ffffff, #939393);
+    box-shadow:  14px 14px 48px #8b8b8b,
+                -14px -14px 142px #bbbbbb;
+    margin-top: 2%;
 }
 
 
 
-/* Estilos generales del footer (Opcional) puestos por isra */
+/* Estilos generales del footer (Opcional) */
 .footer {
     background-color: #000407; 
     color: #ffffff;
@@ -145,7 +148,7 @@ body{
 }
 
 .footer-links a:hover {
-    color: #1418da; 
+    color: #6d6fcf; 
 }
 
 

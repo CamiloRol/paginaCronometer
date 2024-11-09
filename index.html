@@ -11,6 +11,7 @@
 </head>
 <body>
     <!-- Aca quieres cambiar el color y colocar transparencia hazlo directamente en la etiqueta como lo tengo-->
+     <!-- zona nav para logo responsive bootstrap -->
     <nav  id="navSpace" style="background-color: #000407ea;">
         <img src="./recursos/logo cronómetro.png" alt="">
         <ul class="nav justify-content-end">
@@ -18,12 +19,12 @@
               <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Funcionalidades</a>
+              <a class="nav-link" href="./htmlsSinElIndex/funcionalidades.html">Funcionalidades</a>
             </li>
     </nav>
 
     <section id="mainContainer">
-        <!-- Lo que isra quiera colocar -->
+        <!-- Carrusel o propuesta de banner bootstrap o utilizacion de etiqueta-->
         <div class="carrousel-container">
           <!-- Tranquilos esto de aca abajo es una prueba y porfa no vayan a borrar todavia el carrousel -->
           <img src="./recursos/icons8-cronometro-100.png" alt="">
@@ -51,31 +52,30 @@
 
 
         </div>
-
+        
         <section id="formSpace">
             <h1>Bienvenido a tu cronometro favorito🎉</h1>
+            <!-- Este form inicial gestiona la cantidad de cronos que se quieren crear con diversas propiedades o propositos -->
             <form action="" id="setCronometers">
                 <label for="">Cuantos cronometros necesita?: </label>
                 <input type="number" id="getCronoValue">
 
                 <button id="procInit" class="btnStyling">Continuar</button>
             </form>
+            <!-- Este form gestiona el tiempo de los cronos que se quieren crear-->
             <form action="" id="settersTime">
                 
             </form>
-            <button id="reloadPage">Recargar</button>
+            <button id="reloadPage" class="btnStyling">Recargar</button>
         </section>
     </section>
-
+    <!-- El proposito de esta seccion es incrustar los cronos por javascript -->
     <section id="cronometerSpace">
 
     </section>
-
-    
-
       
 
-<!-- Footer opcional puesto por isra -->         
+    <!-- Footer opcional-->         
       <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo">
