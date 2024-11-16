@@ -5,7 +5,7 @@ const procInit = document.getElementById('procInit')
 const settersTime = document.getElementById('settersTime')
 const procCreated = document.getElementById('procCreated')
 let setTime
-const reloadPage = document.getelementById('reloadPage')
+const reloadPage = document.getElementById('reloadPage')
 
 //Obtencion de valores
 const getCronoValue = document.getElementById('getCronoValue').value
@@ -20,27 +20,27 @@ function iniciar() {
     procInit.addEventListener('click', function (event) {
         event.preventDefault();
         setCronometers.style.display = "none";
-        settersTime.style.display = "flex"
         createdInit()
     })
-/*     procCreated.addEventListener('click', function () {
+/*  procCreated.addEventListener('click', function () {
         
     }) */
+
+    reloadPage.addEventListener('click', function () {
+    location.reload()
+    })
 }
 
 /* Esta es la funcion que solicita los tiempos que va a tener los cronos */
 function createdInit() {
+    settersTime.style.display = "flex"
     for (let i = 1; i < getCronoValue; i++) {
-        settersTime.innerHTML += `
+        settersTime.insertAdjacentElement("afterbegin",`
                 <div>
                     <label for="">Ingrese Tiempo en minutos: </label>
                     <input type="number" id="setTime${i}">
                 </div>
-                <button id="procCreated" class="btnStyling">Crear</button>`
+                <button id="procCreated" class="btnStyling">Crear</button>`) 
         setTime = document.getElementById(`setTime${i}`).value
     }
-
-reloadPage.addEventListener('click', function () {
-    location.reload()
-    })
 }
