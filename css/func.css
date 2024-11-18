@@ -2,7 +2,9 @@
     height: 100vh;
 }
 
-
+#infor-container{
+    padding: 20px;
+}
 .general-container{
 
     display: grid;
@@ -14,15 +16,33 @@
     width: 100%;
 }
  .carrouselcontainer-right{
-    display: flex;
-    gap: 140px;
-    align-items: center;
+    text-align: justify;
+    align-content: center;
     width: 80%;
-    margin-left: 10%;
     background: rgba(2, 0, 8, 0.685);
-    padding: 200px;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-
 } 
+.carrouselcontainer-right p{
+    color: #ffff;
+    width: 95%;
+    margin-left: 10px;
+    font-size: large;
+    font-family: sans-serif;
+    
+}
+
+.carrouselcontainer-right h2{
+    color: aqua;
+    align-items: inherit;
+    width: 95%;
+    margin-left: 10px;
+    font-family: fantasy;
+
+}
+#Funcionabilidad{
+
+    padding: 10%;
+    background-color: rgba(0, 0, 0, 0.952);
+}
