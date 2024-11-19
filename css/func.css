@@ -1,3 +1,48 @@
 #funcSpace {
     height: 100vh;
 }
+
+#infor-container{
+    padding: 20px;
+}
+.general-container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+}
+
+.carrouselcontainer-left{
+    width: 100%;
+}
+ .carrouselcontainer-right{
+    text-align: justify;
+    align-content: center;
+    width: 80%;
+    background: rgba(2, 0, 8, 0.685);
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+} 
+.carrouselcontainer-right p{
+    color: #ffff;
+    width: 95%;
+    margin-left: 10px;
+    font-size: large;
+    font-family: sans-serif;
+    
+}
+
+.carrouselcontainer-right h2{
+    color: aqua;
+    align-items: inherit;
+    width: 95%;
+    margin-left: 10px;
+    font-family: fantasy;
+
+}
+#Funcionabilidad{
+
+    padding: 10%;
+    background-color: rgba(0, 0, 0, 0.952);
+}
