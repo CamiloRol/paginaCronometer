@@ -48,11 +48,12 @@ function createdInit() {
     settersTime.innerHTML += content
 
     document.addEventListener('click', function(event) { if (event.target && event.target.id === 'procCreated')
-        
+        createdCrono()
         {console.log('Botón Crear presionado');}
     })
 }
 
 function createdCrono() {
     let crono1 = new Cronometro(getCronoValue, setTime)
+    crono1.crearCrono()
 }

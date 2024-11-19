@@ -7,7 +7,11 @@ class Cronometro {
     }
 
     crearCrono() {
-        crono = ``
+        crono = `<div>
+            <img src="./recursos/start.png" alt="">
+            <img src="./recursos/pause.png" alt="">
+            <img src="./recursos/delete.png" alt="">
+        </div>`
     }
 }
 
