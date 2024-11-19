@@ -23,7 +23,7 @@ function iniciar() {
         createdInit()
     })
 /*  procCreated.addEventListener('click', function () {
-        
+
     }) */
 
     reloadPage.addEventListener('click', function () {
@@ -34,13 +34,13 @@ function iniciar() {
 /* Esta es la funcion que solicita los tiempos que va a tener los cronos */
 function createdInit() {
     settersTime.style.display = "flex"
-    for (let i = 1; i < getCronoValue; i++) {
-        settersTime.insertAdjacentElement("afterbegin",`
+    for (let i = 0; i < getCronoValue; i++) {
+        settersTime.insertAdjacentHTML("afterbegin",`
                 <div>
                     <label for="">Ingrese Tiempo en minutos: </label>
                     <input type="number" id="setTime${i}">
                 </div>
-                <button id="procCreated" class="btnStyling">Crear</button>`) 
-        setTime = document.getElementById(`setTime${i}`).value
+                <button id="procCreated" class="btnStyling">Crear</button>`)
     }
+    settersTime.insertAdjacentHTML("beforeend", ` <button id="procCreated" class="btnStyling">Crear</button> `)
 }

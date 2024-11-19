@@ -1,3 +1,8 @@
+@font-face {
+    font-family: DS-DIGII;
+    src: url('../recursos/DS-DIGII.TTF');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,8 +24,6 @@
     color: white;
     font-weight: bolder;
 }
-
-/* Codigo elaborado por Israel*/
 
 #navSpace a:hover {
     color:  #6d6fcf; 
