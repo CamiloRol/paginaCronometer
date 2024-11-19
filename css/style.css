@@ -124,6 +124,13 @@ body{
     border: none;
 }
 
+.divTime {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4% 4% 4% 4%;
+    margin-bottom: 4%;
+}
+
 .btnStyling {
     border: none;
     width: 128px;

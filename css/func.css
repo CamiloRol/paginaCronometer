@@ -34,7 +34,7 @@
 }
 
 .carrouselcontainer-right h2{
-    color: aqua;
+    color: rgba(0, 255, 255, 0.636);
     align-items: inherit;
     width: 95%;
     margin-left: 10px;
@@ -42,7 +42,7 @@
 
 }
 #Funcionabilidad{
-
+    margin-top: 8%;
     padding: 10%;
     background-color: rgba(0, 0, 0, 0.952);
 }
