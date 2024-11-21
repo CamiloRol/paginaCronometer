@@ -20,7 +20,7 @@
     align-content: center;
     width: 80%;
     background: rgba(2, 0, 8, 0.685);
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 } 
@@ -34,7 +34,7 @@
 }
 
 .carrouselcontainer-right h2{
-    color: rgba(0, 255, 255, 0.636);
+    color: rgba(0, 255, 255, 0.911);
     align-items: center;
     width: 95%;
     margin-left: 10px;
@@ -45,6 +45,7 @@
     margin-top: 8%;
     padding: 10%;
     background-color: rgba(0, 0, 0, 0.952);
+    
 }
 
 #References{
@@ -53,6 +54,7 @@
     gap: 20px;
     background-color: rgba(0, 0, 0, 0.952);
     padding: 10%;
+    
 }
 
 .card1, .card2, .card3{
