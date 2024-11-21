@@ -35,7 +35,7 @@
 
 .carrouselcontainer-right h2{
     color: rgba(0, 255, 255, 0.636);
-    align-items: inherit;
+    align-items: center;
     width: 95%;
     margin-left: 10px;
     font-family: fantasy;
@@ -45,4 +45,27 @@
     margin-top: 8%;
     padding: 10%;
     background-color: rgba(0, 0, 0, 0.952);
+}
+
+#References{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.952);
+    padding: 10%;
+}
+
+.card1, .card2, .card3{
+    background-color: rgba(1, 64, 75, 0.534);
+}
+
+.card1 p , .card2 p, .card3 p{
+    color: #ffff;
+}
+.card1 h5, .card2 h5, .card3 h5{
+    color: #ffff;
+}
+.card1 , .card2 , .card3 {
+
+    border-radius: 5%;
 }
