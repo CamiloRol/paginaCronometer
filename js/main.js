@@ -39,12 +39,11 @@ function createdInit() {
             content += ` <div class="divTime"> 
             <label for="setTime${i}">Ingrese Tiempo en minutos: </label> 
             <input type="number" id="setTime${i}"> </div> `
-        }        
+        } 
+        content += ` <button id="procCreated" class="btnStyling">Crear</button> `       
     }else {
         content += `<p>Estamos programados para brindarte la mejor experiencia por eso lo maximo que puedes insertar son 5 cronometros</p>`
     }
-
-    content += ` <button id="procCreated" class="btnStyling">Crear</button> `
 
     settersTime.innerHTML += content
     
@@ -61,13 +60,18 @@ function createdCrono() {
     let design = ""
     let setTime = []
     let crono = []
+    let k = 0
 
     for (i = 0; i < getCronoValue; i++) {
-        setTime[i] = document.getElementById(`setTime${i}`)
-    }
-    for (i = 0; i < getCronoValue; i++) {
-        crono[i] = new Cronometro(setTime[i])
-        design += crono[i].crearCrono() 
+        setTime[i] = parseFloat(document.getElementById(`setTime${i}`).value)
+        crono[i] = new Cronometro(setTime[i], k)
+        design += crono[i].crearCrono()
+        k++
+        console.log(crono[i].horas);
+        console.log(crono[i].minutos);
+        console.log(crono[i].segundos);
     } 
     cronometerSpace.innerHTML += design
+    
+    
 }
