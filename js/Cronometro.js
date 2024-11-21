@@ -1,16 +1,13 @@
-let crono
-
 class Cronometro {
-    constructor(cantidad, tiempo) {
-        this.cantidad = cantidad
+    constructor(tiempo) {
         this.tiempo = tiempo
     }
 
     crearCrono() {
-        crono = `<div>
-            <img src="./recursos/start.png" alt="">
-            <img src="./recursos/pause.png" alt="">
-            <img src="./recursos/delete.png" alt="">
+        return `<div class="propCrono">
+            <button><img src="./recursos/start.png" alt=""></button>
+            <button><img src="./recursos/pause.png" alt=""></button>
+            <button><img src="./recursos/delete.png" alt=""></button>
         </div>`
     }
 }
