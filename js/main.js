@@ -25,6 +25,7 @@ function iniciar() {
     reloadPage.addEventListener('click', function () {
     location.reload()
     })
+    
 }
 
 /*  Esta es la funcion que solicita los tiempos que va a tener los cronos */
@@ -58,13 +59,13 @@ function createdInit() {
 function createdCrono() {
     cronometerSpace.style.display = "flex"
     let design = ""
-    let setTime = []
     let crono = []
+    let setTime = []
     let k = 0
 
     for (i = 0; i < getCronoValue; i++) {
         setTime[i] = parseFloat(document.getElementById(`setTime${i}`).value)
-        crono[i] = new Cronometro(setTime[i], k)
+        crono[i]  = new Cronometro(setTime[i], k)
         design += crono[i].crearCrono()
         k++
         console.log(crono[i].horas);
@@ -73,5 +74,11 @@ function createdCrono() {
     } 
     cronometerSpace.innerHTML += design
     
-    
+    for (let j = 0; j < getCronoValue; j++) { 
+        const startButton = document.getElementById(`start${j}`); 
+        const stopButton = document.getElementById(`stop${j}`); 
+        const restartButton = document.getElementById(`restart${j}`); 
+
+        startButton.addEventListener('click', () => crono[j].start()); stopButton.addEventListener('click', () => crono[j].pause()); restartButton.addEventListener('click', () => crono[j].restart());
+    }
 }
