@@ -20,6 +20,8 @@ class Cronometro {
                 <button id="start${this.k}"><img src="./recursos/start.png" alt=""></button>
                 <button id="stop${this.k}"><img src="./recursos/pause.png" alt=""></button>
                 <button id="restart${this.k}"><img src="./recursos/delete.png" alt=""></button>
+                 <span id="estado">Pausado</span>  <!-- Visualización del estado -->
+                
             </div>
 
             <div class="buttomSpace">
