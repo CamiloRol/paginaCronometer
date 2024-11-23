@@ -33,7 +33,7 @@ class Cronometro {
 
     start() { 
         if (!this.intervalId) { 
-            this.estado = "En progreso"; 
+            this.estado = "Ejecutandose"; 
             this.updateEstado(); 
             this.intervalId = setInterval(() => { 
                 if (this.segundos > 0) { 
