@@ -32,14 +32,14 @@ class Cronometro {
 
     start() { 
         if (!this.intervalId) { 
-            this.estado = "Ejecutandose"; 
-            this.updateEstado(); 
+            this.estado = "Ejecutandose" 
+            this.updateEstado() 
             this.intervalId = setInterval(() => { 
                 if (this.segundos > 0) { 
-                    this.segundos--; 
+                    this.segundos-- 
                 } else { if (this.minutos > 0) { 
-                            this.minutos--; 
-                            this.segundos = 59; 
+                            this.minutos-- 
+                            this.segundos = 59 
                         } else if (this.horas > 0) { 
                             this.horas--; 
                             this.minutos = 59; 
@@ -81,10 +81,6 @@ class Cronometro {
 
     updateEstado() { 
         const estadoElement = document.getElementById(`estado${this.k}`); estadoElement.textContent = this.estado;
-    }
-
-    estadocheck() {
-        return this.estado
     }
 }
 
